@@ -72,7 +72,7 @@ def run_svm_experiment(C, kernel, gamma, test_size):
         print(f"Accuracy: {acc:.4f}\n")
 
         fpr, tpr, _ = roc_curve(y_test, y_proba)
-        roc_auc = auc9fpr, tpr)
+        roc_auc = auc(fpr, tpr)
 
         plt.figure(figsize=(12, 5))
 
